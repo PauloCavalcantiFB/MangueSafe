@@ -1,0 +1,1 @@
+print("O bot está funcioando como deveria!")
