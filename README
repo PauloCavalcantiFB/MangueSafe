@@ -1,10 +1,10 @@
-<header>PROJETO MANGUESAFE<header>
+PROJETO MANGUESAFE
 
 Esse projeto consiste no desenvolvimento em 3 etapas de uma solução para a máinfra-estrutura da malha cicloviária pernambucana. Os passos consistem em:
 
-1 - Criação de um app para coleta de queixas e reclamações relacionadas aos percursos realizados por seus usuários.
+  1 - Criação de um app para coleta de queixas e reclamações relacionadas aos percursos realizados por seus usuários.
 
-2 - Armazenamento dessas informações em um banco de dados + tratamento básico desses respectivos dados.
+  2 - Armazenamento dessas informações em um banco de dados + tratamento básico desses respectivos dados.
 
-3 - Desenvolvimento de um bot no twitter que publique, semanalmente, os dados coletados com informações do tipo: em quais locais houveram mais queixas, quais ruas o fluxo de
+  3 - Desenvolvimento de um bot no twitter que publique, semanalmente, os dados coletados com informações do tipo: em quais locais houveram mais queixas, quais ruas o fluxo de
 ciclistas é maior, etc...
