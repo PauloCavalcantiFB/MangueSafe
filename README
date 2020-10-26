@@ -6,5 +6,4 @@ Esse projeto consiste no desenvolvimento em 3 etapas de uma solução para a má
 
   2 - Armazenamento dessas informações em um banco de dados + tratamento básico desses respectivos dados.
 
-  3 - Desenvolvimento de um bot no twitter que publique, semanalmente, os dados coletados com informações do tipo: em quais locais houveram mais queixas, quais ruas o fluxo de
-ciclistas é maior, etc...
+  3 - Desenvolvimento de um bot no twitter que publique, semanalmente, os dados coletados com informações do tipo: em quais locais houveram mais queixas, quais ruas o fluxo de ciclistas é maior, etc...
