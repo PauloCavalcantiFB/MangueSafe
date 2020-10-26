@@ -54,6 +54,3 @@ tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contad
 #    print("Autenticação OK.")
 #except:
 #    print("Ocorreu algum erro.")
-
-
-#The word “Calligraphy” is derived from Greek, meaning “beautiful writing”. Calligraphy or the art of fancy writing has thousands of years in its history and development. They are of aesthetics, refinement, creativity and pure beauty.
