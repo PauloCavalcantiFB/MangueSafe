@@ -17,9 +17,3 @@ api.update_status(status=txt_thread, in_reply_to_status_id = original_tweet.id, 
 #    print("Autenticação OK.")
 #except:
 #    print("Ocorreu algum erro.")
-
-#API key: Xrpbldbdq0BEqMZjcYEfKqdmr
-#API key secret: jo7q2PViLfUzpfyRnwQlNDdG3L07HmBk6m2z047WduXqW7rg7i
-#Bearer token: AAAAAAAAAAAAAAAAAAAAADKaJAEAAAAA9cpScEHW7LSlDY90eDGDH6g3Ink%3DQEry3DKyQhtJ4XRCqUWtxXzBcIsxjw1BMaBWohYU8XNa0i2nli
-#Access Token: 1048807349434155008-wPDPwnTPm5EmOOKZEeidQFFK9MUwZc
-#Access token secret: 0cG1uvk2Xd5JwEIA6aUyFuzc1hQzJz4Yf3FBuX91BZO2F
