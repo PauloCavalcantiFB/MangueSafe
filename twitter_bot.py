@@ -8,7 +8,9 @@ auth.set_access_token("1048807349434155008-wPDPwnTPm5EmOOKZEeidQFFK9MUwZc", "0cG
 api = tweepy.API(auth)
 
 #Cria um tweet
-api.update_status("O principal ponto de reclamações foi a AV. Ruy Barbosa.")
+original_tweet = api.update_status('teste de thread3')
+txt_thread = 'Reply update_satus original.'
+api.update_status(status=txt_thread, in_reply_to_status_id = original_tweet.id, auto_populate_reply_metadata=True)
 
 #try:
 #    api.verify_credentials()
