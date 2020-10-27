@@ -25,7 +25,6 @@ for c in range(len(input_raw)):
 	elif c % 130 == 0 and flag == False:
 		commit.append(input_raw[c])
 		temp = temp.join(commit)
-		#print(temp)
 		tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
 		contador += 1
 		commit.clear()
@@ -38,8 +37,12 @@ for c in range(len(input_raw)):
 		commit.clear()
 		temp = ''
 		flag = False
-temp = temp.join(commit)
-tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
+if flag == True:
+	temp = temp.join(commit)
+	tweets.append(api.update_status(temp))
+else:
+	temp = temp.join(commit)
+	tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
 
 #if len(tweets) > 1:
 #	original = api.update_status(tweets[0])
