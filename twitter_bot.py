@@ -1,48 +1,51 @@
 import tweepy
+import time
 
-#Teste de atualização mamaquinho
+def post_text():
 
-#Autentica para o twitter
-auth = tweepy.OAuthHandler("Xrpbldbdq0BEqMZjcYEfKqdmr", "jo7q2PViLfUzpfyRnwQlNDdG3L07HmBk6m2z047WduXqW7rg7i")
-auth.set_access_token("1048807349434155008-wPDPwnTPm5EmOOKZEeidQFFK9MUwZc", "0cG1uvk2Xd5JwEIA6aUyFuzc1hQzJz4Yf3FBuX91BZO2F")
+	#Autentica para o twitter
+	auth = tweepy.OAuthHandler("Xrpbldbdq0BEqMZjcYEfKqdmr", "jo7q2PViLfUzpfyRnwQlNDdG3L07HmBk6m2z047WduXqW7rg7i")
+	auth.set_access_token("1048807349434155008-wPDPwnTPm5EmOOKZEeidQFFK9MUwZc", "0cG1uvk2Xd5JwEIA6aUyFuzc1hQzJz4Yf3FBuX91BZO2F")
 
-#Cria um objeto API
-api = tweepy.API(auth)
+	#Cria um objeto API
+	api = tweepy.API(auth)
 
-raw = input("Insert the text: ")
-input_raw = list(raw)
-commit = []
-tweets = []
-temp = ''
-flag = True
-contador = 0
+	raw = input("Insert the text: ")
+	input_raw = list(raw)
+	commit = []
+	tweets = []
+	temp = ''
+	flag = True
+	contador = 0
 
-for c in range(len(input_raw)):
-	if c == 0:
-		commit.append(input_raw[c])
-	elif c % 130 != 0:
-		commit.append(input_raw[c])
-	elif c % 130 == 0 and flag == False:
-		commit.append(input_raw[c])
+	for c in range(len(input_raw)):
+		if c == 0:
+			commit.append(input_raw[c])
+		elif c % 130 != 0:
+			commit.append(input_raw[c])
+		elif c % 130 == 0 and flag == False:
+			commit.append(input_raw[c])
+			temp = temp.join(commit)
+			tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
+			time.sleep(4)
+			contador += 1
+			commit.clear()
+			temp = ''
+		elif c % 130 == 0 and flag == True:
+			commit.append(input_raw[c])
+			temp = temp.join(commit)
+			#print(temp)
+			tweets.append(api.update_status(temp))
+			time.sleep(4)
+			commit.clear()
+			temp = ''
+			flag = False
+	if flag == True:
+		temp = temp.join(commit)
+		tweets.append(api.update_status(temp))
+	else:
 		temp = temp.join(commit)
 		tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
-		contador += 1
-		commit.clear()
-		temp = ''
-	elif c % 130 == 0 and flag == True:
-		commit.append(input_raw[c])
-		temp = temp.join(commit)
-		#print(temp)
-		tweets.append(api.update_status(temp))
-		commit.clear()
-		temp = ''
-		flag = False
-if flag == True:
-	temp = temp.join(commit)
-	tweets.append(api.update_status(temp))
-else:
-	temp = temp.join(commit)
-	tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
 
 #if len(tweets) > 1:
 #	original = api.update_status(tweets[0])
@@ -54,8 +57,9 @@ else:
 #txt_thread = 'Reply update_satus original.'
 #api.update_status(status=txt_thread, in_reply_to_status_id = original_tweet.id, auto_populate_reply_metadata=True)
 
-#try:
-#    api.verify_credentials()
-#    print("Autenticação OK.")
-#except:
-#    print("Ocorreu algum erro.")
+try:
+    #api.verify_credentials()
+    post_text()
+    print("Autenticação OK.")
+except:
+    print("Ocorreu algum erro.")
