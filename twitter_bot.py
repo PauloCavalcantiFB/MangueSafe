@@ -57,9 +57,9 @@ def post_text():
 #txt_thread = 'Reply update_satus original.'
 #api.update_status(status=txt_thread, in_reply_to_status_id = original_tweet.id, auto_populate_reply_metadata=True)
 
-try:
+#try:
     #api.verify_credentials()
-    post_text()
-    print("Autenticação OK.")
-except:
-    print("Ocorreu algum erro.")
+#    post_text()
+#    print("Autenticação OK.")
+#except:
+#    print("Ocorreu algum erro.")
