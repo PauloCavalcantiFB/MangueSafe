@@ -34,7 +34,6 @@ def post_text(raw):
 		elif c % 130 == 0 and flag == True:
 			commit.append(input_raw[c])
 			temp = temp.join(commit)
-			#print(temp)
 			tweets.append(api.update_status(temp))
 			time.sleep(4)
 			commit.clear()
