@@ -24,6 +24,6 @@ client = gspread.authorize(creds)
 sheet = client.open("databike").sheet1  # abre a planilha
 data = sheet.get_all_records()  # gera uma lista com todas as informações
 
-texto = "O dia " + cell.value + " foi constatado um total de " + sheet.cell(line, col+1).value + " envolvendo ciclistas pela cidade do Recife. Também foi percebido que a rua com maior índice de acidentes ou relatos de queixas foi a "
+texto = "No dia " + cell.value + " foi constatado um total de " + sheet.cell(line, col+1).value + " envolvendo ciclistas pela cidade do Recife. Também foi percebido que a rua com maior índice de acidentes ou relatos de queixas foi a "
 
 twitter_bot.post_text(texto)
