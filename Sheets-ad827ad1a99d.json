@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "robust-zenith-293817",
+  "private_key_id": "ad827ad1a99dc04b7f5b6da0f14595081f45e8e4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCyd2INIhbPtZWE\ngt1jIH/z3/M4n6+GP2bDO3dE/yroM1xvJgp+Z+HNmm1xi7aOzo4bHzklVPRxIg8T\nqKO7i20NZA5Q2CVm+xBwFTVYaUjYkrpyLcoJUuoJuZzEIK53vD/RQav89mGqS4im\n2eDysfOy4Bobct11W9gFX7DnZzhOb5p2VhNmfdunLdSnnIu9lQz6KG07a43uHXwU\nz8pBEq4ClmPSi7SUgoV9vul+GuOeWHkzE2HeGRTjzEMea3akPDkL/b8ms8IfkKG/\n5TuWmzm3BFzrSjJzIhfreSptG0GVgJgH0DjpSVfIpP9Dgt5AG3qqsmcV+uCytphw\nyWK4U/ktAgMBAAECggEAFiND+PAVF0/li6n2D2FNLfHGSGxaiBMeSrJ6MYdbibEx\nUqJL4/E769avo8mabC2IKCof2xcmOVBpwV0GbnG1pdcXBYVCYntbRyQCWYS54g+V\nbCts5+oumOU64oNRUQ37dpgoXvkrFUZIXbYiNsjHO5Wb93KwsOmjKst7dMDzlZsC\nG4L8MXFALduteYqm5eu6DLDMUmb1kQStg3ZoUqll4/nz7R5VnwAtvyG/xApREB26\nykT7dz/fSGPJtibdPofZRXfNDQ8CV8Etmh1owd6IPoHoujncfXoIO8ni7QMDvJDD\nwI2JxfwnN3fEWWuVANe+3D8SsKGbTmLc5iHQL0s3UQKBgQDug9anw4VDqXukR990\naK5P3cH2OCgmFiDmgFTpPzRRIZ894An6dXWkQRp9iz58GpGQnXCp4B6avHSpN3SW\ncQ1Nm1wMPriqvk1fR+BMeaITk0iwWOMwGHd23eVqIi6OjwueNsTRjq7eKmdRp3z/\nGSWRnzqmCl5QmH0ZtUUwAw1INQKBgQC/jJ+1DvPx8IGSwiRFViw5DyXMnNkghNxG\nOFuVmgnNTYx6YtsStWQdpCKXMQEeZYFxqV8WA8MRrTB0oqjcqRyBDlEZVSfXkodQ\niSZNTrf9+PbqZhO59pL1Iz0ZVaYfMRQ2SJqYaj2anbjLiPk3Czm/6zVHuQTgVv7V\n4cU3KR28GQKBgQCJ+Rv4KiNx853Bd44s0c1cCAUGwI+BELXxgPUdhGFoOVHbwjkj\neEUYQkznqN/5fIkOJfUhX7N0gWXe6WR5DmbKqP+DWdkLdFBfuL1on8gBGOcolBLA\nJLcevNfUIHfcIaVv3XDXZHmFrPPdiUzGaK6R4ZFUsZTDfKKJd5HRZ0KMrQKBgQC7\nBN7N1ZqiRvMLyhfFxtwIndyHCUEJeg7jVJU+3JXjaGrW93vzqTzln+LSAVuZRPv8\ncKTRBr1HnfPofQQn5clZzBOsizMKTBtnq3DFHC2Sf6j8tMtfzvou88fs224FmFKm\nqX6ff2NEeef6eXLxpjktQ8XSkDfNncLUKsn2EGPiyQKBgEuMRVrBOahbS+pxais5\n0uyFkCNspHu31cK1mkgJOKU20rjEFA9UuIC4gSqDUIYqzUSZgei4ILwyq0mUFDoW\nY1i7o6Mk5pByuEf+cjrmnXuk5E9Ur1TRUw/nI/lI3fSDzrJjIuFm4nLuHklRj9zs\ndIRWsliZBOOr5vY5gfWHHB7F\n-----END PRIVATE KEY-----\n",
+  "client_email": "databike@robust-zenith-293817.iam.gserviceaccount.com",
+  "client_id": "106578992186493872059",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/databike%40robust-zenith-293817.iam.gserviceaccount.com"
+}
