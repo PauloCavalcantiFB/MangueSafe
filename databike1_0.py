@@ -24,9 +24,5 @@ cell = sheet.cell(line,col)
 
 texto = "No dia " + cell.value + " foi constatado um total de " + sheet.cell(line, col+1).value + " acidentes envolvendo ciclistas pela cidade do Recife. Também foi percebido que a rua com maior índice de acidentes ou relatos de queixas foi a ..."
 
-try:
-    twitter_bot.post_text(texto)
-    print("Autenticação OK.")
-except:
-    print("Error")
-    exit(1)
+twitter_bot.post_text(texto)
+print("Autenticação OK.")
