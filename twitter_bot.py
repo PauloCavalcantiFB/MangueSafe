@@ -1,7 +1,7 @@
 import tweepy
 import time
 
-def post_text():
+def post_text(raw):
 
 	#Autentica para o twitter
 	auth = tweepy.OAuthHandler("Xrpbldbdq0BEqMZjcYEfKqdmr", "jo7q2PViLfUzpfyRnwQlNDdG3L07HmBk6m2z047WduXqW7rg7i")
@@ -10,7 +10,7 @@ def post_text():
 	#Cria um objeto API
 	api = tweepy.API(auth)
 
-	raw = input("Insert the text: ")
+	#raw = input("Insert the text: ")
 	input_raw = list(raw)
 	commit = []
 	tweets = []
@@ -57,9 +57,9 @@ def post_text():
 #txt_thread = 'Reply update_satus original.'
 #api.update_status(status=txt_thread, in_reply_to_status_id = original_tweet.id, auto_populate_reply_metadata=True)
 
-#try:
+try:
     #api.verify_credentials()
-#    post_text()
-#    print("Autenticação OK.")
-#except:
-#    print("Ocorreu algum erro.")
+    post_text()
+    print("Autenticação OK.")
+except:
+    print("Ocorreu algum erro.")
