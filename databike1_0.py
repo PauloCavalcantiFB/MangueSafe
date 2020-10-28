@@ -1,5 +1,6 @@
 import twitter_bot
 import gspread
+import TesteSMTP
 from oauth2client.service_account import ServiceAccountCredentials
 
 #def getLineRow(info):
@@ -24,5 +25,6 @@ cell = sheet.cell(line,col)
 
 texto = "No dia " + cell.value + " foi constatado um total de " + sheet.cell(line, col+1).value + " acidentes envolvendo ciclistas pela cidade do Recife. Também foi percebido que a rua com maior índice de acidentes ou relatos de queixas foi a ..."
 
+TesteSMTP.smtpsend(texto)
 twitter_bot.post_text(texto)
 print("Autenticação OK.")
