@@ -2,7 +2,6 @@ import tweepy
 import time
 
 def post_text(raw):
-
 	#Autentica para o twitter
 	auth = tweepy.OAuthHandler("Xrpbldbdq0BEqMZjcYEfKqdmr", "jo7q2PViLfUzpfyRnwQlNDdG3L07HmBk6m2z047WduXqW7rg7i")
 	auth.set_access_token("1048807349434155008-wPDPwnTPm5EmOOKZEeidQFFK9MUwZc", "0cG1uvk2Xd5JwEIA6aUyFuzc1hQzJz4Yf3FBuX91BZO2F")
@@ -45,6 +44,8 @@ def post_text(raw):
 	else:
 		temp = temp.join(commit)
 		tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
+
+	print("A mensagem foi devidamente publicada no Twitter.")
 
 #if len(tweets) > 1:
 #	original = api.update_status(tweets[0])
