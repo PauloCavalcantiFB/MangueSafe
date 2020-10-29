@@ -45,7 +45,7 @@ def post_text(raw):
 		temp = temp.join(commit)
 		tweets.append(api.update_status(status=temp, in_reply_to_status_id=tweets[contador].id, auto_populate_reply_metadata=True))
 
-	print("A mensagem foi devidamente publicada no Twitter.")
+	print("A mensagem foi devidamente publicada no Twitter.\n")
 
 #if len(tweets) > 1:
 #	original = api.update_status(tweets[0])
